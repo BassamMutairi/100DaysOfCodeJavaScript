@@ -8,29 +8,29 @@
 
 public class ProblemTwo {
 
-	
-	private static void problemTwoSolution() {
+	public static void problemTwoSolution() {
 		
-		// add two numbers
-		// add the total to the biggest number
-
-while(total < 10) {
-int num1 = 1;
-int num2 = 2;
-total = num1 + num2;
-total = total + num2;
-num2 = total;
-}
-		
-		System.out.println(total);
+		int num1 = 0;
+		int num2 = 1;
+		int sum = num1 + num2;
+		int sumeven = 0;
+		while(sum < 4000000){
+		    num1 = num2;
+		    num2 = sum;
+		    sum = num1 + num2;
+		    if(sum % 2 == 0){
+		        sumeven += sum;
+		    }
+		}
+		System.out.println(sumeven);
 	}
-
+		
+	
 	public static void main(String[] args) {
-	
+
 		problemTwoSolution();
-
+		
+		
 	}
+
 }
-
-
-
