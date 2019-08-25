@@ -20,10 +20,19 @@ JavaScript current day and time
 </title> <script>
 
 	var today = new Date();
+
+/* @getDay method is used to get the day of the week according to local time. 
+   where 0 represents Sunday. The value returned by getDay() is an integer ... 
+   0 for sunday, 1 for monday, 2 for tuesday and so on.
+*/
 	var day = today.getDay();
 	var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday",
 			"Thursday", "Friday", "Saturday"];
 	document.write("Today is: " + daylist[day] + ".");
+
+/* @getHours method is used to get the hour for a given date according to local time.
+   the value is an integer between 0 and 23
+*/
 	var hour = today.getHours();
 	var minute = today.getMinutes();
 	var second = today.getSeconds();
